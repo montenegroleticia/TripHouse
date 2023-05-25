@@ -1,10 +1,13 @@
 import { ContainerHeader } from "./style";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <ContainerHeader>
-      <h3>TripHouse</h3>
-    </ContainerHeader>
+    <Link to="/">
+      <ContainerHeader>
+        <h3>TripHouse</h3>
+      </ContainerHeader>
+    </Link>
   );
 }
 
