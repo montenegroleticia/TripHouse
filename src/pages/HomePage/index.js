@@ -9,6 +9,8 @@ function Homepage() {
       <Header />
       <Choices />
       <Detach />
+      <Detach />
+      <Detach />
     </ContainerMain>
   );
 }
