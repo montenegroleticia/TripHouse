@@ -5,6 +5,13 @@ function getDestinations() {
   return promise;
 }
 
-const destinationsApi = { getDestinations };
+function getDestinationsbyid(id) {
+  const promise = axios.get(
+    `${process.env.REACT_APP_BASE_URL}/destinations/${id}`
+  );
+  return promise;
+}
+
+const destinationsApi = { getDestinations, getDestinationsbyid };
 
 export default destinationsApi;

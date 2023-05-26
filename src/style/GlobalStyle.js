@@ -4,6 +4,9 @@ const GlobalStyle = createGlobalStyle`
 *{
 	box-sizing:border-box;
 }
+body {
+    background-color: #f2f2f2;
+}
 a {
     text-decoration: none;
 }

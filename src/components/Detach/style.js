@@ -4,7 +4,7 @@ export const Container = styled.div`
   margin-top: 31px;
   width: 390px;
   height: 300px;
-  background: #487aa1;
+  background: #003580;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +31,7 @@ export const Container = styled.div`
   img {
     width: 348px;
     height: 120px;
+    border-radius: 8px;
   }
   .imageRow {
     display: flex;
@@ -38,6 +39,7 @@ export const Container = styled.div`
     img {
       width: 170px;
       height: 120px;
+      border-radius: 12px;
     }
   }
 `;

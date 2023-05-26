@@ -2,7 +2,7 @@ import Header from "../../components/Header";
 import List from "../../components/List";
 import { ContainerMain } from "../style";
 
-function Lodge() {
+function Lodges() {
   return (
     <ContainerMain>
       <Header />
@@ -11,4 +11,4 @@ function Lodge() {
   );
 }
 
-export default Lodge;
+export default Lodges;

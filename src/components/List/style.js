@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerList = styled.div`
   margin-top: 121px;
   width: 390px;
-  background: #487aa1;
+  background: #003580;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,5 +31,6 @@ export const ContainerList = styled.div`
   img {
     width: 348px;
     height: 120px;
+    border-radius: 8px;
   }
 `;
