@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin-top: 31px;
-  width: 390px;
+  min-width: 390px;
   height: 300px;
-  background: #003580;
+  background: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +18,7 @@ export const Container = styled.div`
       font-weight: 700;
       font-size: 12px;
       line-height: 14px;
-      color: #ffffff;
+      color: #487AA1;
       stroke: 1px solid rgba(0, 0, 0, 0.25);
     }
   }

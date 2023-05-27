@@ -14,7 +14,8 @@ export const ContainerChoice = styled.div`
   height: 120px;
   display: flex;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-  background-color: #0071c2;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: #fafafa;
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -25,7 +26,7 @@ export const ContainerChoice = styled.div`
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
-    color: #ffffff;
+    color: #487aa1;
     stroke: Solid rgba(0, 0, 0, 0.25);
   }
 `;

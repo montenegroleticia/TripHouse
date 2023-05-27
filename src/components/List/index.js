@@ -8,13 +8,6 @@ function List() {
       </div>
       <div className="images">
         <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
       </div>
     </ContainerList>
   );

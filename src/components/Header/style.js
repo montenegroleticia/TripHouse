@@ -4,7 +4,7 @@ export const ContainerHeader = styled.div`
   width: 100vw;
   height: 90px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: #003580;
+  background-color: #fafafa;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -16,9 +16,10 @@ export const ContainerHeader = styled.div`
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 38px;
-    color: #ffffff;
-    stroke: Solid rgba(0, 0, 0, 0.25);
+    color: transparent;
+    -webkit-text-stroke: 1px #487aa1;
+    background-color: transparent;
   }
 `;

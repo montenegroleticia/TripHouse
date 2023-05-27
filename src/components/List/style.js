@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const ContainerList = styled.div`
-  margin-top: 121px;
   width: 390px;
-  background: #003580;
+  height: 200px;
+  background: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: center;
   .headLine {
-    margin-top: 21px;
     margin-left: 21px;
     margin-bottom: 10px;
     h2 {
@@ -17,7 +17,7 @@ export const ContainerList = styled.div`
       font-weight: 700;
       font-size: 12px;
       line-height: 14px;
-      color: #ffffff;
+      color: #487aa1;
       stroke: 1px solid rgba(0, 0, 0, 0.25);
     }
   }
