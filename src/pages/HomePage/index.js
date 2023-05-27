@@ -4,9 +4,11 @@ import { ContainerMain, ContainerDatach } from "../style";
 import Choices from "../../components/Choices";
 import destinationsApi from "../../services/destinationsApi";
 import { useEffect, useState } from "react";
+import lodgesApi from "../../services/lodgesApi";
 
 function Homepage() {
   const [destinations, setDestinations] = useState(null);
+  const [lodges, setLodges] = useState(null);
 
   function getDestinations() {
     destinationsApi
@@ -17,14 +19,22 @@ function Homepage() {
 
   useEffect(getDestinations, []);
 
+  function getLodges() {
+    lodgesApi
+      .getLodges()
+      .then((res) => setLodges(res.data))
+      .catch((err) => console.log(err.response.data));
+  }
+
+  useEffect(getLodges, []);
+
   return (
     <ContainerMain>
       <Header />
       <Choices />
       <ContainerDatach>
         <Detach body={destinations} />
-        <Detach />
-        <Detach />
+        <Detach body={lodges} />
       </ContainerDatach>
     </ContainerMain>
   );

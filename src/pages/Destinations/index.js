@@ -1,5 +1,5 @@
 import Header from "../../components/Header";
-import List from "../../components/List";
+import List from "../../components/List/destinations";
 import { ContainerLists, ContainerMain } from "../style";
 import destinationsApi from "../../services/destinationsApi";
 import { useEffect, useState } from "react";
@@ -15,18 +15,13 @@ function Destinations() {
   }
 
   useEffect(getDestinations, []);
+
   return (
     <ContainerMain>
       <Header />
       <ContainerLists>
-        <List body={destinations} />
-        <List body={destinations} />
-        <List body={destinations} />
-        <List body={destinations} />
-        <List body={destinations} />
-        <List body={destinations} />
-        <List body={destinations} />
-        <List body={destinations} />
+        {destinations &&
+          destinations.map((item, index) => <List key={index} body={item} />)}
       </ContainerLists>
     </ContainerMain>
   );

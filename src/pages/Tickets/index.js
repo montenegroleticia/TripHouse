@@ -1,12 +1,12 @@
 import Header from "../../components/Header";
-import List from "../../components/List";
-import { ContainerMain } from "../style";
+import { ContainerLists, ContainerMain } from "../style";
 
 function Tickets() {
   return (
     <ContainerMain>
       <Header />
-      <List />
+      <ContainerLists>
+      </ContainerLists>
     </ContainerMain>
   );
 }

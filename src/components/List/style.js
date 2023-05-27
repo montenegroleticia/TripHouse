@@ -15,7 +15,7 @@ export const ContainerList = styled.div`
       font-family: "Roboto";
       font-style: normal;
       font-weight: 700;
-      font-size: 12px;
+      font-size: 14px;
       line-height: 14px;
       color: #487aa1;
       stroke: 1px solid rgba(0, 0, 0, 0.25);
@@ -23,13 +23,21 @@ export const ContainerList = styled.div`
   }
   .images {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 10px;
+    p {
+      width: 130px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+      color: #487aa1;
+      stroke: 1px solid rgba(0, 0, 0, 0.25);
+    }
   }
   img {
-    width: 348px;
+    width: 174px;
     height: 120px;
     border-radius: 8px;
   }

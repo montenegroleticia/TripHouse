@@ -4,13 +4,19 @@ function Detach({ body }) {
   return (
     <Container>
       <div className="headLine">
-        <h2>DESTINOS MAIS PROCURADOS</h2>
+        <h2>MAIS PROCURADOS</h2>
       </div>
       <div className="images">
-        <img src={body?.image[0]} alt={body?.name[0]} />
+        {body && body.length > 0 ? (
+          <img src={body[0].image} alt={body[0].name} />
+        ) : null}
         <div className="imageRow">
-          <img src={body?.image[1]} alt={body?.name[1]} />
-          <img src={body?.image[2]} alt={body?.name[2]} />
+          {body && body.length > 1 ? (
+            <img src={body[1].image} alt={body[1].name} />
+          ) : null}
+          {body && body.length > 2 ? (
+            <img src={body[2].image} alt={body[2].name} />
+          ) : null}
         </div>
       </div>
     </Container>

@@ -1,13 +1,14 @@
 import { ContainerList } from "./style";
 
-function List() {
+function List({ body }) {
   return (
     <ContainerList>
       <div className="headLine">
-        <h2>DESTINOS</h2>
+        <h2>{body.city}</h2>
       </div>
       <div className="images">
-        <img src="" alt="" />
+        <img src={body.image} alt={body.city} />
+        <p>{body.description}</p>
       </div>
     </ContainerList>
   );
