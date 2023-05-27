@@ -8,7 +8,10 @@ function List({ body }) {
       </div>
       <div className="images">
         <img src={body.image} alt={body.name} />
-        <p>{body.address}</p>
+        <div>
+          <p>{body.address}</p>
+          <h5>{body.price}</h5>
+        </div>
       </div>
     </ContainerList>
   );

@@ -1,6 +1,6 @@
 import Header from "../../components/Header";
 import List from "../../components/List/destinations";
-import { ContainerLists, ContainerMain } from "../style";
+import { ContainerLists, ContainerMain, ContainerQuery } from "../style";
 import destinationsApi from "../../services/destinationsApi";
 import { useEffect, useState } from "react";
 
@@ -19,6 +19,14 @@ function Destinations() {
   return (
     <ContainerMain>
       <Header />
+      <ContainerQuery>
+        <input list="place" />
+        <datalist id="place">
+          {" "}
+          <option value="Brasil" />
+        </datalist>
+        <button>Filtrar</button>
+      </ContainerQuery>
       <ContainerLists>
         {destinations &&
           destinations.map((item, index) => <List key={index} body={item} />)}

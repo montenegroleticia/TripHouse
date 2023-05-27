@@ -20,6 +20,13 @@ export const ContainerChoice = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover {
+    color: #fafafa;
+    background-color: #487aa1;
+    h3 {
+      color: #fafafa;
+    }
+  }
   h3 {
     font-family: "Roboto";
     font-style: normal;

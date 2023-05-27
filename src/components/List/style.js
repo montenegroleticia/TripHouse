@@ -23,10 +23,11 @@ export const ContainerList = styled.div`
   }
   .images {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     p {
-      width: 130px;
+      margin-bottom: 2px;
+      width: 135px;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 700;
@@ -40,5 +41,16 @@ export const ContainerList = styled.div`
     width: 174px;
     height: 120px;
     border-radius: 8px;
+  }
+  h5 {
+    margin-top: 21px;
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #A9BA75;
+    stroke: 1px solid rgba(0, 0, 0, 0.25);
   }
 `;
