@@ -21,5 +21,8 @@ export const ContainerHeader = styled.div`
     color: transparent;
     -webkit-text-stroke: 1px #487aa1;
     background-color: transparent;
+    &:hover {
+      color: #487aa1;
+    }
   }
 `;
