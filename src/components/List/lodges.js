@@ -1,8 +1,14 @@
 import { ContainerList } from "./style";
+import { useNavigate } from "react-router-dom";
 
 function List({ body }) {
+  const navigate = useNavigate();
+
+  function Page(page) {
+    navigate(page);
+  }
   return (
-    <ContainerList>
+    <ContainerList onClick={() => Page(`/lodge/${body.id}`)}>
       <div className="headLine">
         <h2>{body.name}</h2>
       </div>

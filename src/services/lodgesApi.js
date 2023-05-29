@@ -12,11 +12,18 @@ function getLodgesQuery(destinationValue, priceValue) {
   return promise;
 }
 
-function getLodgesbyid(id) {
-  const promise = axios.get(`${process.env.REACT_APP_BASE_URL}/lodges/${id}`);
+function getLodgesbydestination(id) {
+  const promise = axios.get(
+    `${process.env.REACT_APP_BASE_URL}/destinations/query?id=${id}`
+  );
   return promise;
 }
 
-const lodgesApi = { getLodges, getLodgesbyid, getLodgesQuery };
+function getLodgesbyid(id) {
+  const promise = axios.get(`${process.env.REACT_APP_BASE_URL}/lodge/${id}`);
+  return promise;
+}
+
+const lodgesApi = { getLodges, getLodgesbyid, getLodgesQuery, getLodgesbydestination };
 
 export default lodgesApi;

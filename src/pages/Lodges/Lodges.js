@@ -4,9 +4,11 @@ import { ContainerLists, ContainerMain, ContainerQuery } from "../style";
 import { useEffect, useState } from "react";
 import lodgesApi from "../../services/lodgesApi";
 import destinationsApi from "../../services/destinationsApi";
+import { lodgesContext } from "../../hook/context";
+import { useContext } from "react";
 
 function Lodges() {
-  const [lodges, setLodges] = useState(null);
+  const { lodges, setLodges } = useContext(lodgesContext);
   const [destinations, setDestinations] = useState(null);
   const [destinationValue, setDestinationValue] = useState("");
   const [priceValue, setPriceValue] = useState("");
@@ -21,12 +23,15 @@ function Lodges() {
   useEffect(getDestinations, []);
 
   function getLodges() {
-    lodgesApi
-      .getLodges()
-      .then((res) => setLodges(res.data))
-      .catch((err) => console.log(err.response.data));
+    if (lodges === null) {
+      lodgesApi
+        .getLodges()
+        .then((res) => setLodges(res.data))
+        .catch((err) => console.log(err.response.data));
+    }
   }
 
+  // eslint-disable-next-line
   useEffect(getLodges, []);
 
   function query() {
@@ -72,7 +77,12 @@ function Lodges() {
       </ContainerQuery>
       <ContainerLists>
         {lodges &&
-          lodges.map((item, index) => <List key={index} body={item} />)}
+          lodges.map((item, index) => (
+            <List
+              key={index}
+              body={item}
+            />
+          ))}
       </ContainerLists>
     </ContainerMain>
   );
