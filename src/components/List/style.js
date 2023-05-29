@@ -53,4 +53,10 @@ export const ContainerList = styled.div`
     color: #A9BA75;
     stroke: 1px solid rgba(0, 0, 0, 0.25);
   }
+  &:hover {
+    h2, p {
+      color: #fafafa;
+    }
+    background-color: #487aa1;
+  }
 `;

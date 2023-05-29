@@ -18,7 +18,7 @@ export const Container = styled.div`
       font-weight: 700;
       font-size: 12px;
       line-height: 14px;
-      color: #487AA1;
+      color: #487aa1;
       stroke: 1px solid rgba(0, 0, 0, 0.25);
     }
   }
@@ -42,5 +42,11 @@ export const Container = styled.div`
       height: 120px;
       border-radius: 12px;
     }
+  }
+  &:hover {
+    h2 {
+      color: #fafafa;
+    }
+    background-color: #487aa1;
   }
 `;

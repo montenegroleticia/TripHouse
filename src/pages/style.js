@@ -64,4 +64,10 @@ export const ContainerQuery = styled.div`
       background-color: #487aa1;
     }
   }
+  div {
+    display: flex;
+    input {
+      margin-right: 8px;
+    }
+  }
 `;
