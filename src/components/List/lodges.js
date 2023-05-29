@@ -15,8 +15,8 @@ function List({ body }) {
       <div className="images">
         <img src={body.image} alt={body.name} />
         <div>
-          <p>{body.address}</p>
-          <h5>{body.price}</h5>
+          <p>{body.description}</p>
+          <h5>R${body.price}</h5>
         </div>
       </div>
     </ContainerList>

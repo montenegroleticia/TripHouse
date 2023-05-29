@@ -36,10 +36,14 @@ function Lodge() {
         </div>
         <div className="images">
           <img src={lodges[0].image} alt={lodges[0].name} />
-          <div>
-            <p>{lodges[0].address}</p>
-            <h5>{lodges[0].price}</h5>
-          </div>
+          <img src={lodges[0].room_image} alt={lodges[0].name} />
+        </div>
+        <div className="text">
+          <p>{lodges[0].description}</p>
+          <p>{lodges[0].amenities}</p>
+          <p>{lodges[0].site}</p>
+          <p>{lodges[0].address}</p>
+          <h5>R${lodges[0].price}</h5>
         </div>
       </ContainerLodge>
     </ContainerMain>

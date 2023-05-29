@@ -26,7 +26,6 @@ export const ContainerList = styled.div`
     justify-content: space-evenly;
     align-items: center;
     p {
-      margin-bottom: 2px;
       width: 135px;
       font-family: "Roboto";
       font-style: normal;
@@ -43,7 +42,7 @@ export const ContainerList = styled.div`
     border-radius: 8px;
   }
   h5 {
-    margin-top: 21px;
+    margin-top: 16px;
     text-align: center;
     font-family: "Roboto";
     font-style: normal;

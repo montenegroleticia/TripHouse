@@ -81,10 +81,17 @@ export const ContainerLodge = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  img {
+    width: 174px;
+    height: 120px;
+    border-radius: 8px;
+    margin-left: 8px;
+  }
   .headLine {
-    margin-left: 21px;
-    margin-bottom: 10px;
+    margin-bottom: 21px;
     h2 {
+      text-align: center;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 700;
@@ -94,13 +101,10 @@ export const ContainerLodge = styled.div`
       stroke: 1px solid rgba(0, 0, 0, 0.25);
     }
   }
-  .images {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  .text {
+    width: 300px;
     p {
-      margin-bottom: 2px;
-      width: 135px;
+      margin-top: 16px;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 700;
@@ -110,26 +114,15 @@ export const ContainerLodge = styled.div`
       stroke: 1px solid rgba(0, 0, 0, 0.25);
     }
   }
-  img {
-    width: 174px;
-    height: 120px;
-    border-radius: 8px;
-  }
   h5 {
-    margin-top: 21px;
+    margin-top: 12px;
     text-align: center;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 14px;
-    color: #A9BA75;
+    color: #a9ba75;
     stroke: 1px solid rgba(0, 0, 0, 0.25);
-  }
-  &:hover {
-    h2, p {
-      color: #fafafa;
-    }
-    background-color: #487aa1;
   }
 `;

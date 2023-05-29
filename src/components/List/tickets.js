@@ -50,7 +50,7 @@ function List({ body }) {
           <p>Partida: {formatDate(body.departure)}</p>
           <p>Destino: {getCity(body.destination)}</p>
           <p>Chegada: {formatDate(body.landing)}</p>
-          <h5>{body.price}</h5>
+          <h5>R${body.price}</h5>
         </div>
       </div>
     </ContainerList>
