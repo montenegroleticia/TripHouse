@@ -73,10 +73,11 @@ export const ContainerQuery = styled.div`
 `;
 
 export const ContainerLodge = styled.div`
+  border-radius: 8px;
   margin-top: 121px;
   width: 390px;
   height: 400px;
-  background: #fafafa;
+  background: #487aa1;
   border: 1px solid rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
@@ -89,28 +90,30 @@ export const ContainerLodge = styled.div`
     margin-left: 8px;
   }
   .headLine {
-    margin-bottom: 21px;
+    margin-bottom: 14px;
     h2 {
       text-align: center;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 700;
-      font-size: 14px;
-      line-height: 14px;
-      color: #487aa1;
+      font-size: 16px;
+      line-height: 16px;
+      color: #fafafa;
       stroke: 1px solid rgba(0, 0, 0, 0.25);
     }
   }
   .text {
-    width: 300px;
+    width: 350px;
     p {
+      text-indent: 8px;
+      text-align: justify;
       margin-top: 16px;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 700;
-      font-size: 12px;
-      line-height: 14px;
-      color: #487aa1;
+      font-size: 14px;
+      line-height: 16px;
+      color: #fafafa;
       stroke: 1px solid rgba(0, 0, 0, 0.25);
     }
   }
@@ -120,7 +123,7 @@ export const ContainerLodge = styled.div`
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 14px;
     color: #a9ba75;
     stroke: 1px solid rgba(0, 0, 0, 0.25);

@@ -49,6 +49,7 @@ function Tickets() {
             list="destination"
             value={destinationValue}
             onChange={(e) => setDestinationValue(e.target.value)}
+            placeholder="Destino"
           />
           <datalist id="destination">
             {" "}
@@ -61,6 +62,7 @@ function Tickets() {
             list="price"
             value={priceValue}
             onChange={(e) => setPriceValue(e.target.value)}
+            placeholder="Preço"
           />
           <datalist id="price">
             {" "}

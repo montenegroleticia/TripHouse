@@ -13,10 +13,7 @@ function Lodge() {
   function getLodgesbyid() {
     lodgesApi
       .getLodgesbyid(id)
-      .then((res) => {
-        setLodges(res.data);
-        console.log(res.data);
-      })
+      .then((res) => setLodges(res.data))
       .catch((err) => console.log(err.response.data));
   }
 

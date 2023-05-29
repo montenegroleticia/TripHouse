@@ -20,7 +20,7 @@ function Destinations() {
     <ContainerMain>
       <Header />
       <ContainerQuery>
-        <input list="place" />
+        <input list="place" placeholder="Destino" />
         <datalist id="place">
           {" "}
           <option value="Brasil" />
