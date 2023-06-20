@@ -4,7 +4,7 @@ A site called TripHouse with options for destinations, flights and hotels.
 
 You can access the deployment through the link below:
     
-    https://projeto18-freela-front-nu.vercel.app/
+    https://triphouse.vercel.app
 
 You can access the API repository through the link below:
 
